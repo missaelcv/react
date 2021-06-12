@@ -1,10 +1,16 @@
-
+import React from 'react';
 import './App.css';
+
+function Helloworld(){
+  return (
+  <div>Helloworld</div>
+  )
+}
+
 
 function App() {
   return (
-    <div>Hello Missael
-    </div>
+    <div>this is my componert is: <Helloworld/></div>
   );
 }
 
