@@ -1,21 +1,21 @@
 [
     {
         "id" : 1,
-        "title" : "task one",
+        "title" : "tasks one",
         "description" : "lorem ipsum",
         "done": false
     },
 
     {
         "id" : 2,
-        "title" : "task two",
+        "title" : "tasks two",
         "description" : "lorem ipsum",
         "done": false
     },
 
     {
         "id" : 3,
-        "title" : "task tree",
+        "title" : "tasks tree",
         "description" : "lorem ipsum",
         "done": false
     }
