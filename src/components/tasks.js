@@ -1,10 +1,12 @@
-import { extGlobChars } from "picomatch/lib/constants";
-import React, { Component, Components} from "react";
+import React, { Component } from 'react';
 
-class Tasks  extends Component() {
-    render() {
-        return <h1>Tasks</h1>
+class Tasks extends Component {
+    render () {
+        return this.props.tasks.map(e => <p key={e.id}>
+            {e.title} - {e.description} - {e.done} - {e.id}
+            <input type="checkbox"/>
+            <button>X</button>
+          </p>)
     }
 }
-
-export default tasks;
+export default Tasks;

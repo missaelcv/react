@@ -1,24 +1,17 @@
 import React, {Component} from 'react';
 import './App.css';
-
-
 import tasks from './sample/tasks.json';
-console.log(tasks)
+import Tasks from './components/Tasks';
 
 
 class App extends Component{
-
     state= {
       tasks: tasks
     }
-
 render() { 
   return <div>
-    { this.state.tasks.map(e => <p key={e.id}> 
-      {e.id} - {e.title} - {e.description} - {e.done}
-    </p>)}
+    <Tasks tasks= { this.state.tasks}/>
   </div>
   }
 }
-
 export default App;
