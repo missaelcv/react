@@ -17,6 +17,6 @@
         "id" : 3,
         "title" : "tasks tree",
         "description" : "lorem ipsum",
-        "done": false
+        "done": true
     }
 ]
