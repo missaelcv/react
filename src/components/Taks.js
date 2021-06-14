@@ -1,5 +1,5 @@
-
 import React, { Component } from 'react'
+import PropTypes from 'prop-types';
 
 class Task extends Component {
 
@@ -23,6 +23,10 @@ class Task extends Component {
         <button style={btnDelete}>X</button>
         </p>
     }
+}
+
+Task.propTypes = {
+    task: PropTypes.object.isRequired 
 }
 
 const btnDelete= {

@@ -8,9 +8,10 @@ class App extends Component{
     state= {
       tasks: tasks
     }
+
 render() { 
   return <div>
-    <Tasks tasks= { this.state.tasks}/>
+    <Tasks tasks= {this.state.tasks}/>
   </div>
   }
 }
