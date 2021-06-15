@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-
 import Task from './Taks';
 
 class Tasks extends Component {
@@ -10,7 +9,7 @@ class Tasks extends Component {
     }
 }
 
-Task.propTypes = {
+Tasks.propTypes = {
     tasks: PropTypes.array.isRequired
 }
 
