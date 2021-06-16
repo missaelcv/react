@@ -19,6 +19,7 @@ class TaskForm extends Component {
        })
     }
     render() {
+        this.props.addTask();
         return (
             <form onSubmit={this.onSubmit}>
                 <input type="text" 
