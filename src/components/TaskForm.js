@@ -8,7 +8,7 @@ class TaskForm extends Component {
     }
 
     onsubmit = e => {
-     console.log(this.state)
+        
         e.preventDefaut();
     }
 
@@ -19,7 +19,6 @@ class TaskForm extends Component {
        })
     }
     render() {
-        this.props.addTask();
         return (
             <form onSubmit={this.onSubmit}>
                 <input type="text" 
