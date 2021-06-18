@@ -8,17 +8,16 @@ class TaskForm extends Component {
     }
 
     onsubmit = e => {
-        
         e.preventDefaut();
     }
 
     onChange = e => {
-        console.log(e.target.name, e.target.value)
        this.setState({
           [e.target.name]: e.target.value
        })
     }
     render() {
+//this.props.addTask();
         return (
             <form onSubmit={this.onSubmit}>
                 <input type="text" 
