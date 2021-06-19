@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class TaskForm extends Component {
+export default class TaskForm extends Component {
 
     state = {
         title: '',
@@ -8,6 +8,7 @@ class TaskForm extends Component {
     }
 
     onsubmit = e => {
+        this.props.addTask(this.state.title, this.state.description)
         e.preventDefaut();
     }
 
@@ -17,7 +18,6 @@ class TaskForm extends Component {
        })
     }
     render() {
-//this.props.addTask();
         return (
             <form onSubmit={this.onSubmit}>
                 <input type="text" 
@@ -37,4 +37,3 @@ class TaskForm extends Component {
         )
     }
 }
-export default TaskForm;
