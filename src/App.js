@@ -5,18 +5,22 @@ import Tasks from './components/Tasks';
 import TaskForm from './components/TaskForm';
 
 class App extends Component{
-    state= {
+    state = {
       tasks: tasks
     }
- 
-    addTasks = () => {
-      console.log('adding a new task')
-
-    }
-    
+    addTask = (title,description) => {
+      const newTask = {
+        title: title,
+        description: description,
+        id: this.state.tasks.length
+      }
+      this.setState({
+        tasks: [...this.state.tasks, newTask]
+      })
+    } 
 render() { 
   return <div>
-    <TaskForm addTasks={this.addTasks}/>
+    <TaskForm addTask={this.addTask}/>
     <Tasks tasks= {this.state.tasks}/>
   </div>
   }
