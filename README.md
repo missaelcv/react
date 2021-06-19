@@ -1,16 +1,17 @@
 # Getting Started with Create React App
 
-### `Instalacion de NPM`
-``npm install npm@latest -g´´
+## `Instalacion de NPM`
+ `npm install npm@latest -g´
 
-### `Create React App`
+
+## `Create React App`
 Create React App es un ambiente cómodo para aprender React, y es la mejor manera de comenzar a construir una nueva aplicación de página única usando React.
 
 configura tu ambiente de desarrollo de forma que puedas usar las últimas características de Javascript, brindando una buena experiencia de desarrollo, y optimizando tu aplicación para producción. Necesitarás tener Node >= 10.16 y npm >= 5.6 instalados en tu máquina. Para crear un proyecto ejecuta:
 
-### `Consola cmd`
+## `Consola cmd`
 npx create-react-app my-app
-cd my-app
+`cd my-app´
 npm start
 
 ### `npm start`
