@@ -18,10 +18,19 @@ class App extends Component{
         tasks: [...this.state.tasks, newTask]
       })
     } 
+
+    deleteTask = (id) => {
+      const newTasks = this.state.tasks.filter(task => task.id !== id);
+      console.log(newTasks)
+    }
+
+    checkDone(){
+
+    }
 render() { 
   return <div>
     <TaskForm addTask={this.addTask}/>
-    <Tasks tasks= {this.state.tasks}/>
+    <Tasks tasks= {this.state.tasks} deleteTask={this.deleteTask}/>
   </div>
   }
 }
