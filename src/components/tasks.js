@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import Task from './Taks';
+import Task from './Task';
 
 class Tasks extends Component {
     render () {
@@ -10,7 +10,8 @@ class Tasks extends Component {
         task={task} 
         key={task.id}
         deleteTask={this.deleteTask} 
-        />)
+        checkDone={this.props.checkDone}
+        />);
     }
 }
 
