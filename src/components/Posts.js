@@ -15,6 +15,14 @@ export default class Posts extends Component {
         return (
             <div>
                 <h1>Publicaciones Posts</h1>
+                {
+                    this.state.posts.map(post => {
+                        return <div key={post.id}>
+                            <h3>{post.title}</h3>
+                            <p>{post.body}</p>
+                            </div>
+                    })
+                }
             </div>
         )
     }
